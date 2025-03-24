@@ -1,7 +1,9 @@
-.parcoords > svg, .parcoords > canvas { 
+.parcoords > svg,
+.parcoords > canvas {
   font: 14px sans-serif;
   position: absolute;
 }
+
 .parcoords > canvas {
   pointer-events: none;
 }
@@ -34,10 +36,8 @@
   opacity: 0.25;
 }
 .parcoords {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  position: relative;
+  height: calc(100vh - 280px); /* adjust based on grid + pager height */
+  overflow: visible;
 }
+

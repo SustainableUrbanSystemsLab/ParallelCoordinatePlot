@@ -215,7 +215,7 @@ body, html {
 </div>
 
 
-<div id="example" class="parcoords" style="height:240px;"></div>
+<div id="example" class="parcoords"></div>
 
 <div id="grid"></div>
 <div id="pager"></div>
@@ -226,7 +226,7 @@ body, html {
 var parcoords = d3.parcoords()("#example")
     .alpha(0.4)
     .mode("queue") // progressive rendering
-    .height(d3.max([document.body.clientHeight-326, 220]))
+    .height(d3.max([document.body.clientHeight-520, 220]))
     .margin({
       top: 36,
       left: 0,
